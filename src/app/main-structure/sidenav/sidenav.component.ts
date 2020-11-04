@@ -16,7 +16,6 @@ export class SidenavComponent implements OnInit {
   ngOnInit() {
     this.links = this._mainMenu.getMenu();
     setTimeout(() => {
-      console.log(this.links);
     }, 2000);
   }
 

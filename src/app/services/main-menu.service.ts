@@ -17,5 +17,7 @@ export class MainMenuService {
     menu.push({name: 'Ofetas', url: 'ofertas'});
     menu.push({name: 'Servicios', url: 'servicios'});
     menu.push({name: 'Contactanos', url: 'contactanos'});
+    //console.log(menu);
+    return menu;
   }
 }

@@ -1,19 +1,15 @@
-<mat-toolbar color="primary" class="d-flex justify-content-between">
-  <div class="brand">
-
+<mat-toolbar color="primary" class="d-flex justify-content-between align-items-center">
+  <div class="brand d-flex">
     <button  mat-icon-button class="example-icon d-md-none" aria-label="Example icon-button with menu icon">
       <mat-icon (click)="toggleSidenav()">menu</mat-icon>
     </button>
+    <!-- <div id="main-logo">
+      <img  class="img-fluid" src="/assets/main-logo.jpg" alt="logo Disa Distribuciones Industriales">
+    </div> -->
     <span class="ml-1">DISA</span>
   </div>
 
   <div class="nav d-none d-md-flex" >
-    <span class="example-spacer"></span>
-    <button mat-icon-button class="example-icon favorite-icon" aria-label="Example icon-button with heart icon">
-      <mat-icon>favorite</mat-icon>
-    </button>
-    <button mat-icon-button class="example-icon" aria-label="Example icon-button with share icon">
-      <mat-icon>share</mat-icon>
-    </button>
+    <app-navigation-bar></app-navigation-bar>
   </div>
 </mat-toolbar>

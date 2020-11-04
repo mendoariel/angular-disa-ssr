@@ -1,0 +1,16 @@
+::ng-deep {
+    mat-toolbar {
+        background: rgb(0, 129, 215)!important;
+    }
+    #main-logo {
+        width: 55px;
+        height: 55px;
+        border-radius: 50%;
+        background: white;
+        overflow: hidden;
+    }
+
+    #main-log img {
+        width: 60%;
+    }
+}

@@ -17,6 +17,7 @@ import { DisaServicesComponent } from './pages/disa-services/disa-services.compo
 import { FooterComponent } from './main-structure/footer/footer.component';
 import { HeaderComponent } from './main-structure/header/header.component';
 import { SidenavComponent } from './main-structure/sidenav/sidenav.component';
+import { NavigationBarComponent } from './main-structure/navigation-bar/navigation-bar.component';
 
 
 
@@ -30,7 +31,8 @@ import { SidenavComponent } from './main-structure/sidenav/sidenav.component';
     DisaServicesComponent,
     FooterComponent,
     HeaderComponent,
-    SidenavComponent
+    SidenavComponent,
+    NavigationBarComponent
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'serverApp' }),

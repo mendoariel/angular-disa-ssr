@@ -1,0 +1,9 @@
+<nav class="navigation-bar">
+  <ul *ngIf="menu" class="d-flex">
+    <li *ngFor="let item of menu" class="ml-2" >
+      <a [routerLink]="[item.url]" class="font-weight-light p-1" [routerLinkActive]="'is-active'">
+        <span>{{ item.name }}</span>
+      </a>
+    </li>
+  </ul>
+</nav>

@@ -1,3 +1,10 @@
-<p>
-  sidenav works! from sidenav compoent
-</p>
+<mat-nav-list class="mt-3 mr-4">
+  <mat-list-item *ngFor="let link of links">
+     <a matLine class="w-100 p-2 border-round" (click)="goTo(link.url)" [routerLinkActive]="'is-active'">
+         <span>{{ link.name }}</span>
+      </a>
+     <!-- <button mat-icon-button (click)="showInfo(link)">
+        <mat-icon>info</mat-icon>
+     </button> -->
+  </mat-list-item>
+</mat-nav-list>

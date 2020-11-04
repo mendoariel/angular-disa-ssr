@@ -1,0 +1,26 @@
+::ng-deep {
+    .navigation-bar {
+        ul {
+            list-style: none;
+            margin-bottom: 0;
+            font-size: 0.8em;
+        }
+        
+        li a {
+            text-decoration: none;
+            color: #d9dcdf;
+        }
+        
+        li a:hover {
+            color: white;
+        }
+        .is-active {
+            background:  #d9dcdf;
+            border-radius: .2em;
+            color: #4c7deb;
+        }
+        .is-active span {
+            font-weight: 600;
+        }
+    }
+}

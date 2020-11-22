@@ -16,7 +16,7 @@ export class MainMenuService {
     menu.push({name: 'Productos', url: 'productos'});
     menu.push({name: 'Ofertas', url: 'ofertas'});
     menu.push({name: 'Servicios', url: 'servicios'});
-    menu.push({name: 'Contactanos', url: 'contactanos'});
+    menu.push({name: 'Contacto', url: 'contacto'});
     //console.log(menu);
     return menu;
   }

@@ -1,3 +1,27 @@
-<p>
-  contact works!
-</p>
+<div class="container d-flex flex-column align-itmes-center pt-5">
+
+  <form 
+    (ngSubmit)="sendMessage()"
+    [formGroup]="contactForm" 
+    class="example-form d-flex flex-column align-itmes-center" >
+    <mat-form-field>
+      <mat-label>Tu nombre: </mat-label>
+      <input 
+        matInput 
+        placeholder="Ingresa tu nombre"
+        name="fullName"
+        formControlName="fullName" 
+        required
+        alpha
+        type="text">
+        <mat-error>No mas de 100 caracteres.</mat-error>
+    </mat-form-field>
+
+    <button type="submit" class="btn btn-info">Enviar</button>
+    
+    <!-- <mat-form-field>
+      <mat-label>Leave a comment</mat-label>
+      <textarea matInput placeholder="Ex. It makes me feel..."></textarea>
+    </mat-form-field> -->
+  </form>
+</div>

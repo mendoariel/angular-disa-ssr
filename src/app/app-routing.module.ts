@@ -21,7 +21,7 @@ const routes: Routes = [
     component: AboutComponent
   },
   {
-    path: 'contactanos',
+    path: 'contacto',
     component: ContactComponent
   },
   {

@@ -1,27 +1,61 @@
-<div class="container d-flex flex-column align-itmes-center pt-5">
+<div class="container d-flex flex-column align-items-center pt-5">
 
-  <form 
+  <mat-spinner *ngIf="spinner"></mat-spinner>
+
+  <form *ngIf="!spinner && !sent"
     (ngSubmit)="sendMessage()"
     [formGroup]="contactForm" 
-    class="example-form d-flex flex-column align-itmes-center" >
-    <mat-form-field>
-      <mat-label>Tu nombre: </mat-label>
+    style="max-width: 400px;"
+    class="m-3 example-form d-flex flex-column align-itmes-center" >
+    
+    <mat-form-field class="m-2"  appearance="fill">
+      <mat-label>Nombre: </mat-label>
       <input 
         matInput 
         placeholder="Ingresa tu nombre"
-        name="fullName"
         formControlName="fullName" 
         required
-        alpha
+        type="text">
+        <mat-error>Debe ingresar un nombre.</mat-error>
+    </mat-form-field>
+
+    <mat-form-field class="m-2"  appearance="fill">
+      <mat-label>Email: </mat-label>
+      <input 
+        matInput 
+        placeholder="Ingresa tu email"
+        formControlName="email" 
+        required
+        type="email">
+        <mat-error>Ingrese un email.</mat-error>
+    </mat-form-field>
+
+    <mat-form-field class="m-2"  appearance="fill">
+      <mat-label>Asunto:</mat-label>
+      <input 
+        matInput 
+        placeholder="Ingrese asunto"
+        formControlName="subject" 
         type="text">
         <mat-error>No mas de 100 caracteres.</mat-error>
     </mat-form-field>
 
-    <button type="submit" class="btn btn-info">Enviar</button>
     
-    <!-- <mat-form-field>
-      <mat-label>Leave a comment</mat-label>
-      <textarea matInput placeholder="Ex. It makes me feel..."></textarea>
-    </mat-form-field> -->
+    <mat-form-field appearance="fill">
+      <mat-label>Mensaje:</mat-label>
+      <textarea 
+          required
+          matInput 
+          placeholder="Ingresa tu mensaje"
+          formControlName="message" 
+      ></textarea>
+    </mat-form-field>
+
+    <button type="submit" class="m-2 btn btn-info">Enviar</button>
   </form>
+
+  <div *ngIf="sent">
+    
+  </div>
+
 </div>

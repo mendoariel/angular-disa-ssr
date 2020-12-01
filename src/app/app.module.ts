@@ -19,6 +19,7 @@ import { NavigationBarComponent } from './main-structure/navigation-bar/navigati
 import { ContactComponent } from './pages/contact/contact.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { RxReactiveFormsModule } from '@rxweb/reactive-form-validators';
+import { HttpClientModule } from '@angular/common/http';
 
 
 
@@ -26,6 +27,7 @@ import { RxReactiveFormsModule } from '@rxweb/reactive-form-validators';
   declarations: [
     AboutComponent,
     AppComponent,
+    ContactComponent,
     DisaServicesComponent,
     FooterComponent,
     HeaderComponent,
@@ -33,11 +35,11 @@ import { RxReactiveFormsModule } from '@rxweb/reactive-form-validators';
     OffersComponent,
     ProductsComponent,
     SidenavComponent,
-    ContactComponent
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'serverApp' }),
     AppRoutingModule,
+    HttpClientModule,
     BrowserAnimationsModule,
     AppMaterialModule,
     PagesModule,

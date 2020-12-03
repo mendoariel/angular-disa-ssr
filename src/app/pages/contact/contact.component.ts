@@ -30,6 +30,11 @@ export class ContactComponent implements OnInit {
      });
   }
 
+  sendAgain() {
+    this.contactForm.reset();
+    this.sent = false;
+  }
+
   sendMessage() {
     this.spinner = true;
     this._email.sendEmail(this.contactForm.value).subscribe(

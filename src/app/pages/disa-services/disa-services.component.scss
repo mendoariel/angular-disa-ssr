@@ -1,0 +1,12 @@
+@import "~bootstrap/scss/bootstrap-grid.scss";
+
+
+::ng-deep {
+
+    @include media-breakpoint-up(md) {
+        .img-content, .info-content  {
+            width: 50% !important;
+        }
+    }
+}
+

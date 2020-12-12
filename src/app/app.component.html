@@ -4,9 +4,9 @@
   </mat-sidenav>
   <mat-sidenav-content>
     <app-header (sidenavClick)="sidenav.toggle()"></app-header>
-    <main>
+    <main class="d-flex flex-column justify-conten-between">
       <router-outlet></router-outlet>
+      <app-footer></app-footer>
     </main>
-    <app-footer></app-footer>
   </mat-sidenav-content>
 </mat-sidenav-container>

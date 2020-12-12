@@ -31,6 +31,7 @@
     "bootstrap": "^4.5.3",
     "express": "^4.15.2",
     "hammerjs": "^2.0.8",
+    "ngx-whatsapp-button": "^1.0.4",
     "rxjs": "~6.6.0",
     "tslib": "^2.0.0",
     "zone.js": "~0.10.2"

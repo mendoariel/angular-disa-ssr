@@ -16,94 +16,113 @@ export class ProductsComponent implements OnInit {
   }
 
   buildData() {
-    this.shelve.push({ 
-      name: 'Melamina sobre aglomerado', 
-      img: '/assets/productos/melamina-sobre-aglomerado.jpg'
-    });
+    // 1
     this.shelve.push({ 
       name: 'Melamina sobre MDF', 
       img: '/assets/productos/melamina-sobre-mdf.jpg'
     });
+    // 2
     this.shelve.push({ 
-      name: 'Cantos de PVC', 
-      img: '/assets/productos/cantos-pvc.jpg'
+      name: 'Placa de alto brillo', 
+      img: '/assets/productos/placa-alto-brillo.jpeg'
     });
+
+    // 3
+    this.shelve.push({ 
+      name: 'Melamina sobre aglomerado', 
+      img: '/assets/productos/melamina-sobre-aglomerado.jpg'
+    });
+
+    // 4 
+    this.shelve.push({ 
+      name: 'Fibro puls', 
+      img: '/assets/productos/fibroplus.jpeg'
+    });
+
+    // 5
     this.shelve.push({ 
       name: 'Tablero enchapado', 
       img: '/assets/productos/tablero-enchapado.jpg'
     });
-    this.shelve.push({ 
-      name: 'Canto melamínico', 
-      img: '/assets/productos/cantos-melamina.jpg'
+
+    // 6
+    this.shelve.push({  
+      name: 'Herrajes', 
+      img: '/assets/productos/herrajes2.jpg'
     });
+
+    // 7 
     this.shelve.push({ 
       name: 'Tableros de pino', 
       img: '/assets/productos/tablero-pino.jpg'
     });
+    
+    // 8
     this.shelve.push({ 
-      name: 'Adhesivo vinílico', 
-      img: '/assets/productos/adhesivo-vinilico.jpg'
-    });
-    this.shelve.push({ 
-      name: 'Tableros osb', 
-      img: '/assets/productos/osb.jpg'
-    });
-    this.shelve.push({ 
-      name: 'Fibro puls', 
-      img: '/assets/productos/folio.jpg'
-    });
-    this.shelve.push({ 
-      name: 'Fibro puls', 
+      name: 'Fenólico', 
       img: '/assets/productos/placas-multilaminados-fenolico.jpg'
     });
-    this.shelve.push({  
-      name: 'Placa de yeso. Resistente al fuego', 
-      img: '/assets/productos/resistente-al-fuego.jpg'
+
+    // 9 
+    this.shelve.push({ 
+      name: 'OSB', 
+      img: '/assets/productos/osb.jpg'
     });
-    this.shelve.push({  
-      name: 'Placa de yeso. Resistente a la humedad', 
-      img: '/assets/productos/resistente-a-la-humedad.jpg'
+
+    // 10
+    this.shelve.push({ 
+      name: 'Cantos de PVC', 
+      img: '/assets/productos/cantos-pvc.jpg'
     });
-    this.shelve.push({  
-      name: 'Placa de yeso. Multiproposito', 
-      img: '/assets/productos/placa-de-yeso-multiproposito.jpg'
+    
+    // 11
+    this.shelve.push({ 
+      name: 'Canto melamínico', 
+      img: '/assets/productos/cantos-melamina.jpg'
     });
+
+    // 12 
     this.shelve.push({  
-      name: 'Placa de yeso. Cielo raso', 
-      img: '/assets/productos/placa-de-yeso-cielo-raso-desmontable.jpg'
+      name: 'Placas de yeso', 
+      img: '/assets/productos/placas-de-yeso.jpeg'
     });
-    this.shelve.push({  
-      name: 'Placa de yeso. Revoque seco', 
-      img: '/assets/productos/placa-de-yeso-revoque-seco.jpg'
-    });
-    this.shelve.push({  
-      name: 'Montante y solera', 
-      img: '/assets/productos/montante-y-solera.jpg'
-    });
+
+    // 13
     this.shelve.push({  
       name: 'Masilla', 
       img: '/assets/productos/masilla.jpg'
     });
+
+    // 14
+    this.shelve.push({  
+      name: 'Montante y solera', 
+      img: '/assets/productos/montante-y-solera.jpg'
+    });
+
+    // 15 
+    this.shelve.push({ 
+      name: 'Adhesivo vinílico', 
+      img: '/assets/productos/adhesivo-vinilico.jpg'
+    });
+
+    // 16
     this.shelve.push({  
       name: 'Piso flotante', 
       img: '/assets/productos/piso-flotante.png'
     });
+
+    // 17 
+    this.shelve.push({  
+      name: 'Herramientas y máquinas', 
+      img: '/assets/productos/maquinas.jpeg'
+    });
+
+    // 18
     this.shelve.push({  
       name: 'Goma espuma', 
       img: '/assets/productos/goma-espuma.jpg'
     });
-    this.shelve.push({  
-      name: 'Herramientas', 
-      img: '/assets/productos/herramientas.jpg'
-    });
-    this.shelve.push({  
-      name: 'Maquinas de mano', 
-      img: '/assets/productos/maquinas-de-mano.jpg'
-    });
-    this.shelve.push({  
-      name: 'Herrajes', 
-      img: '/assets/productos/herrajes.jpg'
-    });
+    
   }
 
 }

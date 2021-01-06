@@ -46,7 +46,7 @@
             <textarea required matInput placeholder="Ingresa tu mensaje" formControlName="message"></textarea>
           </mat-form-field>
 
-          <button type="submit" class="m-2 btn btn-info">Enviar</button>
+          <button [disabled]="!contactForm.valid" type="submit" class="m-2 btn btn-info">Enviar</button>
         </form>
 
         <div *ngIf="sent" class="pb-5">

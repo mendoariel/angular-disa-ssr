@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { FormControl, FormGroup } from '@angular/forms';
+import { FormControl, FormGroup, Validators } from '@angular/forms';
 import { RxwebValidators } from '@rxweb/reactive-form-validators';
 import { EmailService } from 'src/app/services/email.service';
 
@@ -16,17 +16,16 @@ export class ContactComponent implements OnInit {
   constructor(private _email: EmailService) { }
 
   ngOnInit() {
-    console.log('hola');
     this. createForm();
   }
 
   createForm() {
     
     this.contactForm = new FormGroup({
-      fullName: new FormControl(''),
-      email: new FormControl('', RxwebValidators.email()),
-      subject: new FormControl(''),
-      message: new FormControl('')
+      fullName: new FormControl('', [Validators.max(50), Validators.required]),
+      email: new FormControl('', [RxwebValidators.email(), Validators.max(50)]),
+      subject: new FormControl('', [Validators.max(50), Validators.required]),
+      message: new FormControl('', [Validators.max(800), Validators.required])
      });
   }
 

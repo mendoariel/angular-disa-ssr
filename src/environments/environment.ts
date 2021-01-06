@@ -4,7 +4,7 @@
 
 export const environment = {
   production: false,
-  api: 'http://disa-dev-api.ubicuowebsite.com'
+  api: 'https://api.disainsumos.com'
 };
 
 /*

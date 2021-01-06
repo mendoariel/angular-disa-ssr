@@ -35,7 +35,7 @@ export class ProductsComponent implements OnInit {
 
     // 4 
     this.shelve.push({ 
-      name: 'Fibro puls', 
+      name: 'Fibro plus', 
       img: '/assets/productos/fibroplus.jpeg'
     });
 

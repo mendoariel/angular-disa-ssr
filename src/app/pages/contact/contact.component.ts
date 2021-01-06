@@ -1,3 +1,4 @@
+// some changes
 import { Component, OnInit } from '@angular/core';
 import { FormControl, FormGroup, Validators } from '@angular/forms';
 import { RxwebValidators } from '@rxweb/reactive-form-validators';
@@ -12,6 +13,7 @@ export class ContactComponent implements OnInit {
   contactForm: FormGroup;
   spinner = false;
   sent = false;
+  aux = 0;
 
   constructor(private _email: EmailService) { }
 

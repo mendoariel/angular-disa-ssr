@@ -15,7 +15,6 @@ export class NavigationBarComponent implements OnInit {
   ngOnInit() {
     this.menu = this._mainMenu.getMenu();
     setTimeout(() => {
-      console.log(this.menu);
     }, 2000);
   }
 

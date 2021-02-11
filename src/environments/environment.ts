@@ -4,7 +4,8 @@
 
 export const environment = {
   production: false,
-  api: 'https://api.disainsumos.com'
+  api: 'http://localhost:3000/',
+  name: 'local'
 };
 
 /*

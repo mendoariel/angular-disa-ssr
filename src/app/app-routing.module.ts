@@ -6,6 +6,7 @@ import { DisaServicesComponent } from './pages/disa-services/disa-services.compo
 import { HomeComponent } from './pages/home/home.component';
 import { OffersComponent } from './pages/offers/offers.component';
 import { ProductsComponent } from './pages/products/products.component';
+import { SalesComponent } from './pages/sales/sales.component';
 
 const routes: Routes = [
   {
@@ -35,6 +36,10 @@ const routes: Routes = [
   {
     path: 'servicios',
     component: DisaServicesComponent
+  },
+  {
+    path: 'ventas',
+    component: SalesComponent
   },
 ];
 

@@ -1,4 +1,5 @@
 export const environment = {
   production: true,
-  api: 'https://api.disainsumos.com'
+  api: 'https://api.disainsumos.com',
+  name: 'production'
 };

@@ -21,7 +21,7 @@ export class ApiService {
   getSales(): Observable<any> {
     return this.http
       .get<any>(
-        `${this.url}`,
+        `${this.url}/sales`,
       );  
   } 
 }

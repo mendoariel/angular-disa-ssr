@@ -9,19 +9,26 @@ import { environment } from 'src/environments/environment';
 })
 export class SalesComponent implements OnInit {
 
+  spinner: boolean;
+  sales: any[] = [];
+
   constructor(private _api: ApiService) { }
 
   ngOnInit(): void {
+    this.spinner = true;
     console.log(environment.name);
-    this.getSales();
+    setTimeout(() => this.getSales(), 3000);
   }
 
   getSales(){
     this._api.getSales().subscribe(
       res => {
-        console.log(res)
+        this.spinner = false;
+        this.sales = res;
+        console.log(this.sales)
       },
       error => {
+        this.spinner = false;
         console.log(error)
       }
     )

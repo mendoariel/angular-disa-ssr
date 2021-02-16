@@ -4,25 +4,29 @@
             list-style: none;
             margin-bottom: 0;
             font-size: 0.8em;
+            letter-spacing: .5px;
         }
         
         li a {
             text-decoration: none;
-            color: #d9dcdf;
+            color: #b5bbc4;
+            transition: color .4s,text-shadow .4s,font-size .4s;
         }
         
         li a:hover {
             color: white;
+            text-shadow: 2px 9px 11px rgba(0,0,0,1);
+            font-size: 1em;
         }
-        .is-active {
-            background:  #d9dcdf;
-            border-radius: .2em;
+        /*.is-active:focus {
+            background:  #fff;
+            border-radius: .4em;
         }
         .is-active span {
-            color: #002FA7;
+            color: #03398b;
         }
         .is-active span {
-            font-weight: 600;
-        }
+            font-weight: 500;
+        }*/
     }
 }

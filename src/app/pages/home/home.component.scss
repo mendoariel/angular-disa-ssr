@@ -1,8 +1,33 @@
+.container{
+    padding-top: 1.2rem;
+}
+.card-body{
+    outline: none;
+}
+
 .card-title {
     font-size: 1.2em;
     font-weight: bold;
 }
 
-.cart-text {
+.card-text {
     font-size: 1em;
+}
+
+.m-3{
+    transition: transform .8s;
+}
+
+.m-3:hover {
+    transform: scale(1.05);
+}
+
+.img-container{
+    margin: auto;
+    height: 18rem;
+    width: 18rem;
+}
+
+.img-container img{
+    object-fit: contain;
 }

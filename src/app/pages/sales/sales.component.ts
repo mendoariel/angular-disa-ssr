@@ -16,8 +16,10 @@ export class SalesComponent implements OnInit {
 
   ngOnInit(): void {
     this.spinner = true;
-    console.log(environment.name);
-    setTimeout(() => this.getSales(), 3000);
+    // console.log(environment.name);
+    //setTimeout(() => this.getSales(), 3000);
+
+    this.getSales()
   }
 
   getSales(){

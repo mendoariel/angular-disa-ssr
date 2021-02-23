@@ -20,6 +20,13 @@ import { ContactComponent } from './pages/contact/contact.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { RxReactiveFormsModule } from '@rxweb/reactive-form-validators';
 import { HttpClientModule } from '@angular/common/http';
+import { NewHomeComponent } from './pages/new-home/new-home.component';
+import { MostImportantContentComponent } from './pages/new-home/components/most-important-content/most-important-content.component';
+import { SecondContentComponent } from './pages/new-home/components/second-content/second-content.component';
+import { SeparatorContentComponent } from './pages/new-home/components/separator-content/separator-content.component';
+import { TopCategoriesContentComponent } from './pages/new-home/components/top-categories-content/top-categories-content.component';
+import { BalckContentComponent } from './pages/new-home/components/balck-content/balck-content.component';
+import { LastContentComponent } from './pages/new-home/components/last-content/last-content.component';
 
 
 
@@ -36,6 +43,13 @@ import { HttpClientModule } from '@angular/common/http';
     OffersComponent,
     ProductsComponent,
     SidenavComponent,
+    NewHomeComponent,
+    MostImportantContentComponent,
+    SecondContentComponent,
+    SeparatorContentComponent,
+    TopCategoriesContentComponent,
+    BalckContentComponent,
+    LastContentComponent,
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'serverApp' }),

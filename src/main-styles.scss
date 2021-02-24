@@ -1,0 +1,15 @@
+$sales-color: #c60c30;
+@mixin reset {
+    margin: 0;
+    padding: 0;
+
+}
+
+@mixin btn-sales {
+    padding: .5em .9em;
+    background: $sales-color;
+    color: white;
+    font-weight: 500;
+    border: none;
+    cursor: pointer;
+}

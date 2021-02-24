@@ -1,0 +1,72 @@
+@import '~bootstrap/dist/css/bootstrap.min.css';
+
+
+$sales-color: #c60c30;
+
+@mixin reset {
+    margin: 0;
+    padding: 0;
+
+}
+
+@mixin btn-sales {
+    padding: .5em .9em;
+    background: $sales-color;
+    color: white;
+    font-weight: 500;
+    border: none;
+    cursor: pointer;
+}
+
+::ng-deep {
+    .main {
+        @include reset();
+    }
+
+    .black-content {
+        background-color: rgba(0,0,0,.8) !important;
+        color: white;
+    }
+
+    .alpha  {
+        @include reset();
+        min-height: 200px;
+        background: url("/assets/home/disa-insumos.jpg") no-repeat center;
+        background-size: cover;
+    }
+
+    .beta {
+        @include reset();
+        min-height: 200px;
+        background: url("/assets/productos/placa-de-yeso-multiproposito.jpg") no-repeat center;
+        background-size: cover;
+    }
+
+    .action-sales-btn {
+        @include btn-sales();
+    }
+
+}
+
+/* Using SCSS variables to store breakpoints */
+$breakpoint-tablet: 768px;
+
+@media (min-width: $breakpoint-tablet) {
+    .main {
+        display: flex !important;
+        flex-direction: row !important;
+        align-items: stretch;
+        min-height: 400px !important;
+    }
+
+    .alpha figure, .beta  figure {
+        min-height: 400px !important;
+    }
+    .alpha {
+        width: 65%;
+    }
+
+    .beta {
+        width: 35%;
+    }
+}

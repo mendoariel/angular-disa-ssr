@@ -1,1 +1,19 @@
-<p>second-content works!</p>
+<div class="container d-flex flex-column">
+
+    <h3 class="h2 p-5 text-center">{{ title }}</h3>
+    
+    <div class="item d-flex flex-row w-100" *ngFor="let item of items; let i = index;">
+        
+        <div class="figure" style="width: 33%;">
+            <img class="img-fluid"  [src]="'/assets/' + item.img " [alt]="item.title">
+        </div>
+        <div class="item-content" style="width: 76%;">
+            {{ i }}
+            <h4 class="h4">{{ item.title }}</h4>
+            <p>{{ item.description }}</p>
+            <button class="action-sales-btn">Comprar</button>
+        </div>
+
+    </div>
+
+</div>

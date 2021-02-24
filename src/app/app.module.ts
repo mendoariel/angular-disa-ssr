@@ -25,7 +25,7 @@ import { MostImportantContentComponent } from './pages/new-home/components/most-
 import { SecondContentComponent } from './pages/new-home/components/second-content/second-content.component';
 import { SeparatorContentComponent } from './pages/new-home/components/separator-content/separator-content.component';
 import { TopCategoriesContentComponent } from './pages/new-home/components/top-categories-content/top-categories-content.component';
-import { BalckContentComponent } from './pages/new-home/components/balck-content/balck-content.component';
+import { BlackContentComponent } from './pages/new-home/components/black-content/black-content.component';
 import { LastContentComponent } from './pages/new-home/components/last-content/last-content.component';
 
 
@@ -48,7 +48,7 @@ import { LastContentComponent } from './pages/new-home/components/last-content/l
     SecondContentComponent,
     SeparatorContentComponent,
     TopCategoriesContentComponent,
-    BalckContentComponent,
+    BlackContentComponent,
     LastContentComponent,
   ],
   imports: [

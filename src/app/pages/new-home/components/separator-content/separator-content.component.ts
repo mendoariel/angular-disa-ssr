@@ -6,10 +6,13 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./separator-content.component.scss']
 })
 export class SeparatorContentComponent implements OnInit {
+  title: string;
 
   constructor() { }
 
   ngOnInit(): void {
+    this.title = "hola gatitos";
+
   }
 
 }

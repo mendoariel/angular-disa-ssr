@@ -2,12 +2,33 @@
 @import '~bootstrap/dist/css/bootstrap.min.css';
 
 
+
 ::ng-deep {
+    .container {
+        padding: 0 !important;
+    }
+
+    .item {
+        background-color: $grey;
+    }
+
+    .two-image-content  .item-content {
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+
+
+    
     /* Using SCSS variables to store breakpoints */
     $breakpoint-tablet: 768px;
     @media (min-width: $breakpoint-tablet) {
         .item {
             @include reset();
+        }
+
+        .two-image-content figure {
+            height: 400px;
         }
     }
 }

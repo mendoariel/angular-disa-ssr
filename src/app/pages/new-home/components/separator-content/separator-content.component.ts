@@ -7,12 +7,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SeparatorContentComponent implements OnInit {
   title: string;
+  text: string;
 
   constructor() { }
 
   ngOnInit(): void {
     this.title = "hola gatitos";
-
+    this.text = "Venta de materiales para la fabricación de muebles, sillas y la construcción en seco. \nServicios de cortes de placas y pegado de canto."
   }
 
 }

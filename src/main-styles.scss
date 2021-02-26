@@ -1,4 +1,6 @@
 $sales-color: #c60c30;
+$grey: #ededed;
+
 @mixin reset {
     margin: 0;
     padding: 0;
@@ -12,4 +14,8 @@ $sales-color: #c60c30;
     font-weight: 500;
     border: none;
     cursor: pointer;
+}
+
+.text-attraction {
+    color: $sales-color;
 }

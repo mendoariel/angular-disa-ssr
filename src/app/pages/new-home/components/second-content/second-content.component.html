@@ -1,19 +1,62 @@
 <div class="container d-flex flex-column">
 
     <h3 class="h2 p-5 text-center">{{ title }}</h3>
-    
-    <div class="item d-flex flex-row w-100" *ngFor="let item of items; let i = index;">
-        
-        <div class="figure" style="width: 33%;">
-            <img class="img-fluid"  [src]="'/assets/' + item.img " [alt]="item.title">
+
+    <!-- firs row  -->
+    <div class="firs-row d-flex flex-column flex-md-row">
+        <div class="item d-flex flex-row w-100 mt-3 mr-3" *ngFor="let item of items1; let i = index;">
+            <div class="figure"  style="max-width: 45%;">
+                <img class="img-fluid"   [src]="'/assets/' + item.img " [alt]="item.title">
+            </div>
+            <div class="item-content p-3" >
+                <h4 class="h4">{{ item.title }}</h4>
+                <p>{{ item.description }}</p>
+                <button class="action-sales-btn">Comprar</button>
+            </div>
         </div>
-        <div class="item-content" style="width: 76%;">
-            {{ i }}
-            <h4 class="h4">{{ item.title }}</h4>
-            <p>{{ item.description }}</p>
-            <button class="action-sales-btn">Comprar</button>
+    </div>
+
+    <!-- second row -->
+    <div class="second-row d-flex flex-column flex-md-row">
+        <div class="item d-flex flex-row w-100 mt-3 mr-3" *ngFor="let item of items2; let i = index;">
+            <div class="figure"  style="max-width: 40%;">
+                <img class="img-fluid"   [src]="'/assets/' + item.img " [alt]="item.title">
+            </div>
+            <div class="item-content p-3" >
+                <h4 class="h4">{{ item.title }}</h4>
+                <p>{{ item.description }}</p>
+                <button class="action-sales-btn">Comprar</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- two image box -->
+    <div class="two-image-content  d-flex flex-column  flex-md-row">
+        <div class="first-image position-relative w-100">
+            <figure style="height: 233px; overflow: hidden;">
+                <img class="img-fluid"   [src]="'/assets/' + image[0].img " [alt]="image[0].title">
+            </figure>
+            <div class="item-content p-3" >
+                <h3 class="h3 text-attraction">{{ image[0].title }}</h3>
+                <h3 class="h3">{{ image[0].description }}</h3>
+                <button class="action-sales-btn px-5">Comprar</button>
+            </div>
         </div>
 
+        <div class="second-image position-relative w-100 w-100">
+            <figure   style="height: 233px; overflow: hidden;">
+                <img class="img-fluid"   [src]="'/assets/' + image[1].img " [alt]="image[1].title">
+            </figure>
+            <div class="item-content p-3 d-flex h-100 w-100 flex-column justify-content-end align-items-end" >
+                <h3 class="h3 text-attraction d-inline mr-5">{{ image[1].title }}</h3>
+                <h3 class="h3 d-inline mr-5">{{ image[1].description }}</h3>
+                <button class="action-sales-btn px-5 mr-5 mb-3">Comprar</button>
+            </div>
+        </div>
+        
     </div>
+
+    
+   
 
 </div>

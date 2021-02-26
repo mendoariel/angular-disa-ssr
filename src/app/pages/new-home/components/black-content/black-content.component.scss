@@ -1,0 +1,31 @@
+.mainbox div{
+    background-color: rgb(34, 32, 32);
+}
+
+.content{
+    color: #fff;
+    letter-spacing: .5px;
+}
+
+.mb-1{
+    margin-bottom: 1px !important;
+}
+
+.link a{
+    color: rgb(196, 189, 189);
+    border-bottom: 2px solid #fff;
+    text-decoration: none;
+    transition: border-bottom .5s;
+}
+
+.link a:hover{
+    border-bottom: 2px solid rgb(34, 32, 32);
+    color: #fff;
+}
+
+@media (min-width: 768px){
+    .firstcontent{
+        margin-bottom: 0 !important;
+        margin-right: 1px !important;
+    }
+}

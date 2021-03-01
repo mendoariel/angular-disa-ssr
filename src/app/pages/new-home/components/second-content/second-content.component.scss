@@ -27,8 +27,16 @@
             @include reset();
         }
 
+        .item:nth-last-child(odd) {
+            margin-left: .8em;
+        }
+
+        .first-image {
+            margin-right: 1em;
+        }
         .two-image-content figure {
             height: 400px;
         }
+
     }
 }

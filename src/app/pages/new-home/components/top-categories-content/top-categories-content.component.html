@@ -1,1 +1,14 @@
-<p>top-categories-content works!</p>
+<div class="container py-4 ">
+    <h3 class="h3 text-center">{{ title }}</h3>
+
+    <!-- Columns are always 50% wide, on mobile and desktop -->
+    <div class="row">
+        <div *ngFor="let item of categories" class="col-6 col-md-4 col-lg-3 categorie-content p-5">
+            <figure style="height: 140px; overflow: hidden;">
+                <img class="img-fluid" [src]="'/assets/' + item.picture" [alt]="item.title">
+            </figure>
+            <h5 class="h6 text-center mt-3">{{ item.name }}</h5>
+        </div>
+    </div>
+
+</div>

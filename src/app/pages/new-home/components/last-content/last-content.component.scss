@@ -1,0 +1,57 @@
+@import '~bootstrap/dist/css/bootstrap.min.css';
+
+.mainbox{
+    padding: 3em 0 4em 0 !important;
+}
+
+.mainbox p{
+    color: #000;
+}
+
+.text-offers{
+    font-size: 1.3em;
+}
+
+.second-content{
+    padding: 40px 80px 50px 80px!important;
+}
+
+.btn {
+    letter-spacing: .5px;
+    font-size: 14px;
+    color: #c60c30;
+    font-weight: 600;
+    border: 2px solid #c60c30;
+    border-radius: 0;
+    width: 90vw !important;
+}
+
+.pt-5{
+    padding-top: 70px !important;
+}
+
+.fab{
+    color: #000;
+    font-size: 2.2em;
+}
+
+.fab:hover{
+    color: #002FA7;
+    text-decoration: none;
+    outline: none;
+}
+
+.list-socials{
+    list-style: none;
+    width: 50vw !important;
+}
+
+@media (min-width: 768px){
+    .btn{
+        width: 30vw !important;
+    }
+
+    .list-socials{
+        width: 20vw !important;
+    }
+}

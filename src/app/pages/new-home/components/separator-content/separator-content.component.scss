@@ -1,0 +1,13 @@
+@import '~bootstrap/dist/css/bootstrap.min.css';
+@import '/src/main-styles.scss';
+
+.separator{
+    background-color: #ededed;
+}
+
+$breakpoint-tablet: 768px;
+
+@media (max-width: 768px) {
+    .separator {
+    }
+}

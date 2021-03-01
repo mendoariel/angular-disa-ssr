@@ -1,0 +1,42 @@
+@import '/src/main-styles.scss';
+@import '~bootstrap/dist/css/bootstrap.min.css';
+
+
+
+::ng-deep {
+    .container {
+        padding: 0 !important;
+    }
+
+    .item {
+        background-color: $grey;
+    }
+
+    .two-image-content  .item-content {
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+
+
+    
+    /* Using SCSS variables to store breakpoints */
+    $breakpoint-tablet: 768px;
+    @media (min-width: $breakpoint-tablet) {
+        .item {
+            @include reset();
+        }
+
+        .item:nth-last-child(odd) {
+            margin-left: .8em;
+        }
+
+        .first-image {
+            margin-right: 1em;
+        }
+        .two-image-content figure {
+            height: 400px;
+        }
+
+    }
+}

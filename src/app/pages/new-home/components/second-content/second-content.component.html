@@ -43,16 +43,15 @@
             </div>
         </div>
 
-        <div class="second-image position-relative w-100 w-100">
+        <div class="second-image position-relative w-100">
             <figure   style="height: 233px; overflow: hidden;">
-                <img class="img-fluid"   [src]="'/assets/' + image[1].img " [alt]="image[1].title">
+                <img class="img-fluid w-100"   [src]="'/assets/' + image[1].img " [alt]="image[1].title">
             </figure>
             <div class="item-content p-3 d-flex h-100 w-100 flex-column justify-content-end align-items-end" >
                 <h3 class="h3 text-attraction d-inline mr-5">{{ image[1].title }}</h3>
                 <h3 class="h3 d-inline mr-5">{{ image[1].description }}</h3>
                 <button class="action-sales-btn px-5 mr-5 mb-3">Comprar</button>
             </div>
-        </div>
-        
+        </div> 
     </div>
 </div>

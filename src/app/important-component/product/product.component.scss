@@ -1,0 +1,26 @@
+::ng-deep {
+    .dos {
+        width: 61%;
+        border: dotted 2px green;
+    }
+    .uno {
+        width: 39%;
+        border: dashed 1px green;
+    }
+
+    $breakpoint-tablet: 768px;
+    @media (min-width: $breakpoint-tablet) {
+        .product {
+            border:solid 3px red;
+            flex-direction: row;
+        }
+        .cinco {
+            width: 61%;
+            border: dotted 2px red;
+        }
+        .tres {
+            width: 39%;
+            border: dashed 1px red;
+        }
+    }
+}

@@ -27,6 +27,8 @@ import { SeparatorContentComponent } from './pages/new-home/components/separator
 import { TopCategoriesContentComponent } from './pages/new-home/components/top-categories-content/top-categories-content.component';
 import { BlackContentComponent } from './pages/new-home/components/black-content/black-content.component';
 import { LastContentComponent } from './pages/new-home/components/last-content/last-content.component';
+import { ProductComponent } from './important-component/product/product.component';
+import { SalesComponent } from './pages/sales/sales.component';
 
 
 
@@ -50,6 +52,8 @@ import { LastContentComponent } from './pages/new-home/components/last-content/l
     TopCategoriesContentComponent,
     BlackContentComponent,
     LastContentComponent,
+    ProductComponent,
+    SalesComponent
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'serverApp' }),

@@ -15,11 +15,11 @@ export class SalesComponent implements OnInit {
   constructor(private _api: ApiService) { }
 
   ngOnInit(): void {
-    this.spinner = true;
+    //this.spinner = true;
     // console.log(environment.name);
     //setTimeout(() => this.getSales(), 3000);
 
-    this.getSales()
+    //this.getSales()
   }
 
   getSales(){

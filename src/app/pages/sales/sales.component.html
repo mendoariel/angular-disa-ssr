@@ -1,18 +1,3 @@
-<div class="container d-flex flex-column align-items-center justify-content-center p-5" style="min-height: 350px;">
-    
-    <div *ngIf="spinner" class="spinner-border text-primary" role="status">
-        <span class="sr-only">Loading...</span>
-    </div>
-    
-    <div *ngIf="!spinner">
-        <div   *ngFor="let sale of sales" class="card" style="width: 18rem;">
-            <img [src]="'assets/' + sale.picture" class="card-img-top" [alt]="sale.title">
-            <div class="card-body">
-                <h5 class="card-title">{{ sale.name }}</h5>
-                <p class="card-text">{{ sale.description }}</p>
-                <p class="card-text">{{ sale.price }}</p>
-                <a href="#" class="btn btn-primary">Consultar</a>
-            </div>
-        </div>
-    </div>
+<div class="container">
+    <product></product>
 </div>

@@ -3,11 +3,10 @@ import { CommonModule } from '@angular/common';
 import { HomeComponent } from './home/home.component';
 import { PagesRoutingModule } from './pages-routing.module';
 import { BrowserModule } from '@angular/platform-browser';
-import { SalesComponent } from './sales/sales.component';
 
 
 @NgModule({
-  declarations: [HomeComponent, SalesComponent],
+  declarations: [HomeComponent],
   imports: [
     BrowserModule,
     CommonModule,

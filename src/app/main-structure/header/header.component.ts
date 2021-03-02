@@ -11,7 +11,7 @@ export class HeaderComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
-    console.log('hello gero de nuevo')
+    
   }
 
   toggleSidenav() {

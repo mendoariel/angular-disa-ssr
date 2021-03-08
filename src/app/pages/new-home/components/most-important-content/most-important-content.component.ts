@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'disa-most-important-content',
@@ -8,19 +9,23 @@ import { Component, OnInit } from '@angular/core';
 export class MostImportantContentComponent implements OnInit {
   alphaContain: any;
   betaContain: any;
-  constructor() { }
+  constructor(private _router: Router) { }
 
   ngOnInit(): void {
     this.putContent();
   }
 
+  navigateProducts() {
+    this._router.navigate(['/productos'])
+  }
+
   putContent() {
     this.alphaContain = {
-      h3: 'Conoce como comprar en linea',
+      h3: 'Productos disponibles',
 
-      p: 'Cada vez llevamos más tiempo en esto, y cada vez tenemos mas productos y serivicios para ofrecer.En esta página puedes concer todos los pruductos con los que cuenta nuestra empresa',
+      p: 'Cada vez llevamos más tiempo en esto, y cada vez tenemos mas productos y servicios para ofrecer.  En esta página puedes concer todos los pruductos',
 
-      button: 'VER Ofertas'
+      button: 'VER PRODUCTOS'
 
     }
 

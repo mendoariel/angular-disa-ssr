@@ -10,6 +10,7 @@ import { environment } from 'src/environments/environment';
 })
 export class ApiService {
   url = environment.api;
+  url1 = environment.apiDisaSale;
 
   options = { headers: new HttpHeaders().set('Content-Type', 'application/json') };
 
@@ -19,9 +20,17 @@ export class ApiService {
    
 
   getSales(): Observable<any> {
+
     return this.http
       .get<any>(
         `${this.url}/sales`,
+      );  
+  } 
+
+  getProducts(): Observable<any> {
+    return this.http
+      .get<any>(
+        `${this.url1}/productos`,
       );  
   } 
 }

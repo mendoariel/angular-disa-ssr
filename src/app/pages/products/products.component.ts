@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ApiService } from 'src/app/services/api.service';
 
 @Component({
   selector: 'app-products',
@@ -8,12 +9,29 @@ import { Component, OnInit } from '@angular/core';
 export class ProductsComponent implements OnInit {
 
   shelve: any[] = [];
+  products: any[] = [];
 
-  constructor() { }
+
+  constructor(private _api: ApiService) { }
 
   ngOnInit() {
     this.buildData();
+    this.getProducts();
   }
+
+  getProducts() {
+    this._api.getProducts().subscribe(
+      (res) => {
+        this.products = res;
+        console.log(this.products)
+      },
+      (err) => {
+        console.log(err)
+      }
+    );
+  }
+
+
 
   buildData() {
     // 1

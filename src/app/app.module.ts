@@ -29,6 +29,7 @@ import { BlackContentComponent } from './pages/new-home/components/black-content
 import { LastContentComponent } from './pages/new-home/components/last-content/last-content.component';
 import { ProductComponent } from './important-component/product/product.component';
 import { SalesComponent } from './pages/sales/sales.component';
+import { HowToBuyComponent } from './pages/how-to-buy/how-to-buy.component';
 
 
 
@@ -53,7 +54,8 @@ import { SalesComponent } from './pages/sales/sales.component';
     BlackContentComponent,
     LastContentComponent,
     ProductComponent,
-    SalesComponent
+    SalesComponent,
+    HowToBuyComponent
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'serverApp' }),

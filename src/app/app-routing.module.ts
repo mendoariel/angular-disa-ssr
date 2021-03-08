@@ -4,6 +4,7 @@ import { AboutComponent } from './pages/about/about.component';
 import { ContactComponent } from './pages/contact/contact.component';
 import { DisaServicesComponent } from './pages/disa-services/disa-services.component';
 import { HomeComponent } from './pages/home/home.component';
+import { HowToBuyComponent } from './pages/how-to-buy/how-to-buy.component';
 import { NewHomeComponent } from './pages/new-home/new-home.component';
 import { OffersComponent } from './pages/offers/offers.component';
 import { ProductsComponent } from './pages/products/products.component';
@@ -17,6 +18,10 @@ const routes: Routes = [
   {
     path: 'new-home',
     component: NewHomeComponent
+  },
+  {
+    path: 'como-comprar',
+    component: HowToBuyComponent
   },
   {
     path: 'home',

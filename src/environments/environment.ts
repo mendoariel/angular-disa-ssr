@@ -5,6 +5,7 @@
 export const environment = {
   production: false,
   api: 'http://localhost:3000',
+  apiDisaSale: 'http://api-disa-sales.ubicuowebsite.com',
   name: 'local'
 };
 

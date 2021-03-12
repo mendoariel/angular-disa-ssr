@@ -1,122 +1,66 @@
-<div class="container py-3">
-
-
-  <div class="d-flex flex-column">
-    
-    <div class="card mb-3">
-      <div class="row no-gutters">
-        <div class="col-md-4">
-          <img [src]="'/assets/' + products[0].image" class="card-img" >
-        </div>
-        <div class="col-md-8">
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-          </div>
-        </div>
-      </div>
+<!--Jumbotron-->
+<div class="container-fluid p-0">
+  <div class="jumbotron jumbotron-fluid">
+    <div class="container">
+      <h2 class="display-4 text-center">Nuestros Productos</h2>
     </div>
   </div>
-  <div class="d-none">
-    <div class="card mb-3">
-      <div class="row no-gutters">
-        <div class="col-md-4">
-          <img [src]="'/assets/' + products[0].image" class="card-img" >
+</div>
+
+<div class="container pt-1 pb-4">
+  <!--View Desktop-->
+  <div *ngIf="products" class="d-none d-md-flex row justify-content-center">
+    <div *ngFor="let product of products" class="col-md-6 col-lg-4 p-4">
+      <div class="card shadow">
+        <div class="img-product">
+          <img class="card-img-top" [src]="'/assets/' + product.image" [alt]="product.title">
         </div>
-        <div class="col-md-8">
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+        <div class="card-body">
+          <div class="card-title pt-2">
+            <h4>{{ product.title }}</h4>
+          </div>
+          <div class="card-text">
+            <p>{{ product.description }}</p>
+          </div>
+          <div class="d-flex flex-row justify-content-between align-items-center">
+            <div class="price">
+              <span class="text-dark">Precio: ${{ product.price}}</span>
+            </div>
+            <div class="buy">
+              <a class="btn btn-dark">Comprar</a>
+            </div>
           </div>
         </div>
       </div>
     </div>
-    <div class="card mb-3">
-      <div class="row no-gutters">
-        <div class="col-md-4">
-          <img src="..." class="card-img" alt="...">
+ 
+
+  </div>
+  <!--View Mobile-->
+  <div *ngIf="products" class="d-md-none">
+    <div *ngFor="let product of products" class="p-1">
+      <div class="d-flex flex-row border border-lightrounded rounded  product shadow">
+        <div class="image w-50 rounded">
+          <img class="img-fluid " [src]="'/assets/' + product.image" [alt]="product.title">
         </div>
-        <div class="col-md-8">
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+        <div class="text p-2 w-50 d-flex flex-column">
+          <div class="">
+            <h4>{{ product.title }}</h4>
           </div>
-        </div>
-      </div>
-    </div>
-    <div class="card mb-3">
-      <div class="row no-gutters">
-        <div class="col-md-4">
-          <img src="..." class="card-img" alt="...">
-        </div>
-        <div class="col-md-8">
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+          <div class="">
+            <p>{{ product.description }}</p>
           </div>
-        </div>
-      </div>
-    </div>
-    <div class="card mb-3">
-      <div class="row no-gutters">
-        <div class="col-md-4">
-          <img src="..." class="card-img" alt="...">
-        </div>
-        <div class="col-md-8">
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="card mb-3">
-      <div class="row no-gutters">
-        <div class="col-md-4">
-          <img src="..." class="card-img" alt="...">
-        </div>
-        <div class="col-md-8">
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+          <div class="d-flex flex-row justify-content-between align-items-center">
+            <div class="price">
+              <span class="text-dark">Precio: ${{ product.price}}</span>
+            </div>
+            <div class="buy">
+              <a class="btn btn-dark">Comprar</a>
+            </div>
           </div>
         </div>
       </div>
     </div>
   </div>
 
-  
-
-  
-
-
-
-
-  
-
-
-
-  <div *ngIf="products">
-    <div *ngFor="let product of products" class="d-flex w-100 mt-2 pt-3" style="border-top: 1px solid rgb(235, 240, 248);">
-      <figure  style="width: 37%">
-        <img class="img-fluid" [src]="'/assets/' + product.image" [alt]="product.title" style="border-radius: 0.3em;">
-      </figure>
-      <div class="d-flex flex-column justify-content-between p-4 pl-4" style="width: 63%;" >
-        <div >
-          <h4 class=" h5">{{ product.title}}</h4>
-          <p >{{ product.description }}</p>
-        </div>
-        <div class="text-center">
-          <span >${{ product.price}}</span>
-        </div>
-      </div>
-      
-    </div>
-  </div>
 </div>

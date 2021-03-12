@@ -11,9 +11,7 @@ export class MainMenuService {
   getMenu() {
     let menu;
     menu = [];
-    menu.push({name: 'New DISA', url: 'new-home'});
     menu.push({name: 'Inicio', url: 'home'});
-    menu.push({name: 'Ventas en linea', url: 'ventas'});
     menu.push({name: 'Productos', url: 'productos'});
     menu.push({name: 'Servicios', url: 'servicios'});
     menu.push({name: 'Nosotros', url: 'nosotros'});

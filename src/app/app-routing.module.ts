@@ -16,16 +16,12 @@ const routes: Routes = [
     component: NewHomeComponent
   },
   {
-    path: 'new-home',
-    component: NewHomeComponent
-  },
-  {
     path: 'como-comprar',
     component: HowToBuyComponent
   },
   {
-    path: 'home',
-    component: HomeComponent
+    path: 'inicio',
+    component: NewHomeComponent
   },
   {
     path: 'nosotros',
